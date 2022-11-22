@@ -4,12 +4,11 @@ const closeBtn =document.querySelector(".close-btn");
 const hero = document.querySelector(".hero");
 
 modalBtn.addEventListener("click", function() {
-    modal.classList.add("open-modal");
-    if (hero.classList("open-modal")) {
-        hero.classList.remove("open-modal");
-    }
+    hero.classList.remove("show");
+    modal.classList.add("show");
 });
 
 closeBtn.addEventListener("click", function() {
-    modal.classList.remove("open-modal");
+    modal.classList.remove("show");
+    hero.classList.add("show");
 });
